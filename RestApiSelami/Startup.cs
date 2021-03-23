@@ -59,7 +59,7 @@ namespace RestApiSelami
         {
             using(var context =serviceScope.ServiceProvider.GetService<MyDbContext>())
             {
-                context.Database.Migrate();
+                db.Database.Migrate();
             }
         }
     }
