@@ -39,7 +39,7 @@ namespace RestApiSelami
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                UpdateDatabase(app);
+                
             }
             
             app.UseHttpsRedirection();
@@ -54,13 +54,5 @@ namespace RestApiSelami
             });
         }
     }
-    private static void UpdateDatabase(IApplicationBuilder app){
-        using ( var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().createScope())
-        {
-            using(var context =serviceScope.ServiceProvider.GetService<MyDbContext>())
-            {
-                db.Database.Migrate();
-            }
-        }
-    }
+   
 }
