@@ -39,8 +39,9 @@ namespace RestApiSelami
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                UpdateDatabase(app);
             }
-            UpdateDatabase(app);
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
