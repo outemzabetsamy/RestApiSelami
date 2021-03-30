@@ -16,7 +16,7 @@ env_variables:
   # The __ in My__Greeting will be translated to a : by ASP.NET.
   DB_USER: sqlserver
   DB_PASS: samysamy
-  DB_NAME: lieudb
+  DB_NAME: lieuxdb
   DB_HOST: 34.121.113.160
   
   beta_settings:
