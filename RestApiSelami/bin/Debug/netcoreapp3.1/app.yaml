@@ -14,4 +14,11 @@ resources:
 
 env_variables:
   # The __ in My__Greeting will be translated to a : by ASP.NET.
-  My__Greeting: Hello AppEngine!
+  DB_USER: sqlserver
+  DB_PASS: samysamy
+  DB_NAME: lieudb
+  DB_HOST: 34.121.113.160
+  
+  beta_settings:
+    cloud_sql_instances: "speedy-rite-309115:us-central1:samysamy=tcp:1433"
+  
