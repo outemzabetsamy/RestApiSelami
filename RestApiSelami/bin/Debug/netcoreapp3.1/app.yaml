@@ -7,11 +7,11 @@ env: flex
 # https://cloud.google.com/appengine/docs/flexible/python/configuring-your-app-with-app-yaml
 env_variables:
   # The __ in My__Greeting will be translated to a : by ASP.NET.
-  DB_USER: sqlserver
-  DB_PASS: samysamy
-  DB_NAME: lieuxdb
-  DB_HOST: cloudsql
+  DB_USER: 'sqlserver'
+  DB_PASS: 'samysamy'
+  DB_NAME: 'lieuxdb'
+  DB_HOST: 'cloudsql'
   
   beta_settings:
-    cloud_sql_instances: speedy-rite-309115:us-central1:samysamy=tcp:1433
+    cloud_sql_instances: 'speedy-rite-309115:us-central1:samysamy=tcp:1433'
   
